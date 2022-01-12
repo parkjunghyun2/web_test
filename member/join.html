@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>project</title>
+    <style>
+
+        * {
+            /* border: 1px solid gray; */
+            width: 800px;
+            margin: 0 auto;
+
+        }
+
+        .top_header {
+            background-color: white;
+            display: flex;
+            /* width: 100px; */
+            /* display: flex; */
+            /* justify-content: flex-end; */
+            /* flex-wrap: wrap; */
+            /* flex-direction: row; */
+            margin-right: 30px;
+        }
+
+        .logo {
+            background-color: white;
+            display: inline-block;
+            text-align: left;
+            width: 200px;
+            height: 80px;
+            /* float: left; */
+            border: 2px solid gray;
+        }
+
+        .login {
+            display: inline-block;
+            text-align: center;
+            margin-left: 400px;
+        }
+
+        .header {
+            width:800px;
+            /* clear:both; */
+            /* display: flex; */
+            /* justify-content: flex-end; */
+            /* margin-right: 100px;; */
+            /* background-color: ghostwhite; */
+            /* display: inline-flex; */
+        }
+        
+        .top_menu {
+            border: 1px solid gray;
+            background-color: white;
+            border-radius: 5px;
+            /* margin-top: 50px; */
+            /* margin-left: 200px; */
+            /* float: right; */
+            display: flex;
+            flex-wrap: wrap;
+            height: 30px;
+            width: 800px;
+        }
+
+        .top_menu ul {
+            background-color: white;
+            margin-top: 3px;;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            /* flex-wrap: wrap; */
+        }
+
+        .top_menu ul li {
+            display: flex;
+            justify-content: flex-end;
+            /* flex-wrap: wrap; */
+            width: 70px;
+        }
+
+        .top_menu ul li:hover {
+            cursor: pointer;
+            color: gray;
+        }
+
+        .container {
+            
+
+        }
+
+        .main {
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+        }
+
+        nav {
+            /* border: 1px solid gray; */
+            float: left;
+            background-color: white;
+
+        }
+
+        section {
+            width: 3000px;
+            background-color: white;
+        }
+        
+        aside {
+            /* border: 1px solid gray; */
+            background-color: white;
+        }
+
+        footer {
+            background-color: ghostwhite;
+            border-top: 1px solid grey;
+        }
+
+        .margin {
+            margin-top: 50px;
+            width:460px;
+            background-color: white;
+        }
+        
+        .article {
+            margin-right:100px;
+            display: inline-block;
+            background-color: white;
+            
+        }
+
+        .join {
+            width:50px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            margin-left: 50px;
+            margin-top: 50px;
+
+        }
+
+        .hlogin {
+            width: 300px;
+            /* margin-top:50px; */
+        }
+
+        #legend {
+            width:300px;
+        }
+
+        #id, #password {
+            width:100px;
+        }
+        
+        .cancel {
+            width: 100px;
+        }
+
+        .submit {
+            width:100px;
+        }
+
+        .field {
+            width:300px;
+            display: inline-block
+        }
+
+        .button {
+            width: 300px;
+            display: inline-block;
+        }
+
+        #logoj {
+            width:200px;
+            height:60px;
+        }
+
+        #barj {
+            width:170px;
+            height:600px;
+        }
+
+        input {
+            margin-top:10px;
+            width:80px;
+        }
+
+        input[type='checkbox'], input[type="radio"] {
+            width:30px;
+        }
+
+        input[type="date"] {
+            width:120px;
+        }
+
+        #txt {
+            width:300px;
+        }
+
+        #pnum1, #pnum2, #pnum3 {
+            width: 80px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class='top_header'>
+                <div class = "logo">
+                    <img src="../logo.jpg" alt="logo" id="logoj">
+                </div>
+                
+                <div class = "login">
+                    <a href="login.html">login  |</a>
+                    <a href="join.html"> join</a>
+                </div>
+        
+            </div>
+
+            <div class="header">
+                       
+                <nav class = "top_menu">
+                    <ul>
+                        <li>
+                            <a href="../index.html">홈</a></li>
+                        <li>
+                            <a href="../me/me.html">자기소개</a></li>
+                        <li>
+                            <a href="../custom/custom.html">게시판</a></li>
+                        <li>
+                            <a href="../etc/etc.html">ETC</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </header>
+         
+    </div>
+
+    <div class="main">   
+        <nav>
+            <img src="../기둥기둥.png" alt="기둥기둥" id="barj">
+        </nav>
+
+        <section class="margin">
+            <header class="hlogin">
+                <h1>join</h1>
+            </header>
+            <article class="article">
+                <form class='join'>
+                    <fieldset class ="field">
+                        <legend id ="legend">   join Info</legend>
+                        아이디: 
+                        <input type="text" name="id">
+                        <input type="button" value="ID중복검사" id="ckbtn">
+                        <br>
+                        생년월일:
+                        <input type="date" name="date">
+                        <br>
+                        성별:
+                        <input type="radio" name="gender" value="남"> 남자
+                        <input type="radio" name="gender" value="여"> 여자
+                        <br>
+                        전화번호:
+                        <select id="pnum1">
+                            <option value="010" selected>010</option>
+                            <option value="011">011</option>
+                            <option value="051">051</option>
+                        </select>
+                        " - "
+                        <input type="text" id="pnum2">
+                        " - "
+                        <input type="text" id="pnum3">
+                        <br>
+                        취미:
+                        <input type="checkbox" name="hobby">운동
+                        <input type="checkbox" name="hobby">쇼핑
+                        <input type="checkbox" name="hobby">독서
+                        <input type="checkbox" name="hobby">음악
+                        <br>
+                        <br>
+                        자기소개:
+                        <textarea id="txt" cols="10" rows="5"></textarea>
+                        <br>
+                        <div class="button">
+                            <input type="button" value="작성" class ="submit">
+                            <input type="button" value="초기화" class="reset">
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
+        </section>
+
+        <aside >
+            <img src="../기둥기둥.png" alt="기둥기둥" id="barj">
+        </aside>
+    </div>
+    <footer>
+        <pre>      
+        빅데이터 시각화                                                                      부산it센터
+        </pre>
+    </footer>
+</body>
+</html>
